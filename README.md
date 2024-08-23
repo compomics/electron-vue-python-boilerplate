@@ -1,8 +1,8 @@
-### electron + vue3 + FastAPI
+# electron + vue3 + FastAPI
 
 Desktop application built with electron, Vue3 + Vite, FastAPI.
 
-### Installation and running
+## Installation and running
 
 To run electron you will need to install Node.js and npm (node package manager) as electron is  JavaScript.
 To learn more about electron: https://www.electronjs.org/
@@ -10,53 +10,79 @@ To install Node.js you can follow this guide. The recommended way to install Nod
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 Clone the project
+```
 git clone git@github.com:compomics/electron-vue-python-boilerplate.git
+```
 
 
-### local application development 
-for backend:
-create virtual environment electron-vue-python-boilerplate
+### Local application development 
+**For backend:**
+
+Create virtual environment `electron-vue-python-boilerplate` with the tools you usually use, and activate. Ex.:
+```
 python3 -m venv electron-vue-python-boilerplate
 source electron-vue-python-boilerplate/bin/activate
+```
+Go to backend and intstall all project requirements
+```
 cd src/backend
 pip install -r requirements.txt
+```
+Launch backend in a terminal
+```
 python3 main.py
-Now API runs on localhost on port 5500
+```
+Now API runs on localhost on port 5500 http://localhost:5500
 
-for frontend:
+**For frontend:**
+
+In a different terminal run
+```
 cd src/frontend
+```
 Install all the needed modules from package.js
+```
 npm install
 npm run dev
+```
 Now the frontend will run in the browser http://localhost:5173/
 
 
-### local packaged application development
-for backend:
-create virtual environment electron-vue-python-boilerplate
+### Local packaged application development
+**For backend:**
+
+create virtual environment `electron-vue-python-boilerplate`
+```
 python3 -m venv electron-vue-python-boilerplate
 source electron-vue-python-boilerplate/bin/activate
 cd src/backend
 pip install -r requirements.txt
+```
 
-for frontend
+**For frontend**
+```
 cd src/frontend
 npm install
-
-in protject root
+```
+In protject root
+```
 npm run start
+```
 
-
-### to package application into one file
-mac
+### To package application into one file
+- mac
+```
 npm run build:mac
-
+```
 (Need to still test that everything works find for 2 following builds)
-windows
+- windows
+```
 npm run build:win
-
-linux
+```
+- linux
+```
 npm run build:linux
+```
 
 
 
