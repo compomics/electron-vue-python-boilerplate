@@ -1,0 +1,44 @@
+{
+    "appId": "electron-vue-python-boilerplate",
+    "asar": false,
+    "directories": {
+        "output": "dist"
+    },
+    "mac": {
+        "target": [
+            "dmg"
+        ],
+        "artifactName": "electron-vue-python-boilerplate"
+    },
+    "nsis": {
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": true
+    },
+    "win": {
+        "target": "nsis",
+        "artifactName": "electron-vue-python-boilerplate"
+    },
+    "linux": {
+        "target": [
+            "AppImage"
+        ],
+        "artifactName": "electron-vue-python-boilerplate"
+    },
+    "files": [
+        "main.js",
+        "build/backend/*",
+        "build/frontend/**/*",
+        "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+        "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+        "!**/node_modules/*.d.ts",
+        "!**/node_modules/.bin",
+        "!src",
+        "!config",
+        "!README.md",
+        "!scripts",
+        "!build/renderer",
+        "!dist",
+        "!electron-vue-python-boilerplate/**/*"
+    ]
+}
