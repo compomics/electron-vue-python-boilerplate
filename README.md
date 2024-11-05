@@ -2,6 +2,9 @@
 
 Desktop application built with electron, Vue3 + Vite, FastAPI.
 
+I opted for a double package.json file in case we want to have a web application as well running separately. This way we can run backend and frontend separately on the server in the convenient way.
+
+
 ## Installation and running
 
 To run electron you will need to install Node.js and npm (node package manager) as electron is  JavaScript.
@@ -74,7 +77,7 @@ npm run start
 ```
 npm run build:mac
 ```
-(Need to still test that everything works find for 2 following builds)
+(Need to still test that everything works fine for 2 following builds)
 - windows
 ```
 npm run build:win
@@ -83,6 +86,16 @@ npm run build:win
 ```
 npm run build:linux
 ```
+
+### Thanks
+I thank the following projects for inspiration:
+
+https://github.com/Deluze/electron-vue-template
+
+https://github.com/iamyb/electron-fastapi-vue-element-plus
+
+https://github.com/hafiidz/electron-vite-vue-fastapi
+
 
 
 
